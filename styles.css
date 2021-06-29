@@ -1,15 +1,19 @@
+
 .board {
   display: grid;
-  grid-template-columns: repeat(2, 245px);
-  grid-template-rows: repeat(2, 245px);
+  grid-template-columns: repeat(3, 182px);
+  grid-template-rows: repeat(3, 182px);
   background-color: #cdb4db;
   width: 480px;
   height: 480px;
+  margin: 100px auto;
+  text-align: center;
+
 }
 .subBoard {
   display: grid;
-  grid-template-columns: repeat(3, 80px);
-  grid-template-rows: repeat(3, 80px);
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
   background-color: #ffc6ff;
   border: 2px solid #caffbf;
 }
@@ -19,7 +23,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 80px;
-  height: 80px;
-  border: 1px solid rgba(0, 199, 60, 0.8);
+  width: 60px;
+  height: 60px;
+  border: 1px solid #3aa824;
 }

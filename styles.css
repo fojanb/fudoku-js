@@ -1,0 +1,25 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 245px);
+  grid-template-rows: repeat(2, 245px);
+  background-color: #cdb4db;
+  width: 480px;
+  height: 480px;
+}
+.subBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  background-color: #ffc6ff;
+  border: 2px solid #caffbf;
+}
+.squareStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(0, 199, 60, 0.8);
+}

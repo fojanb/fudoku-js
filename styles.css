@@ -1,14 +1,13 @@
 
 .board {
   display: grid;
-  grid-template-columns: repeat(3, 182px);
-  grid-template-rows: repeat(3, 182px);
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(3, 180px);
   background-color: #cdb4db;
-  width: 480px;
-  height: 480px;
-  margin: 100px auto;
+  margin: 100px;
+  width: 542px;
   text-align: center;
-
+  border: 5px solid #caffbf;
 }
 .subBoard {
   display: grid;

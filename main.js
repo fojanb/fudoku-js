@@ -1,4 +1,4 @@
-// 6 by 6 sudoku
+// 9 by 9 sudoku
 let ranNums = [];
 
 const board = document.querySelector(".board");
@@ -9,7 +9,8 @@ const gameBoard = () => {
     let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     let k = nums.length;
     let z = 0;
-    ranNums.length = 0;  //ranNums = [];
+    ranNums.length = 0; //ranNums = [];
+    // Permutation of 1 to 9
     while (k > 0) {
       z = Math.floor(Math.random() * k);
       ranNums.push(nums[z]);
@@ -27,4 +28,3 @@ const gameBoard = () => {
   }
 };
 gameBoard();
-// Permutation of 1 to 9

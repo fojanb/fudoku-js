@@ -1,8 +1,11 @@
+body{
+  background-color: cadetblue;
+}
 .board {
   display: grid;
   grid-template-columns: repeat(3, 180px);
   grid-template-rows: repeat(3, 180px);
-  margin: 100px;
+  margin: 100px auto;
   width: 540px;
   height: 540px;
   text-align: center;

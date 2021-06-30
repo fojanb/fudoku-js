@@ -1,23 +1,29 @@
 // 9 by 9 sudoku
-let ranNums = [];
-
 const board = document.querySelector(".board");
+// -------------------------------
+let ranNums = [8, 3, 1, 5, 6, 2, 9, 7, 4];
+let k;
+let z = 0;
+let b = 0;
+// ranNums.length = 0; //ranNums = [];
+// Permutation of 1 to 9
+
+// -------------------------------
 const gameBoard = () => {
   for (let i = 0; i <= 8; i++) {
+    if (b === 0 || b >= 3) {
+      b = 0;
+      k = ranNums.length;
+      while (k > 0) {
+        z = Math.floor(Math.random() * k);
+        ranNums.push(ranNums[z]);
+        ranNums.splice(z, 1);
+        k--;
+      }
+      console.log("first", ranNums);
+    }
     const subBoard = document.createElement("div");
     subBoard.classList.add("subBoard");
-    let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let k = nums.length;
-    let z = 0;
-    ranNums.length = 0; //ranNums = [];
-    // Permutation of 1 to 9
-    while (k > 0) {
-      z = Math.floor(Math.random() * k);
-      ranNums.push(nums[z]);
-      nums.splice(z, 1);
-      k--;
-    }
-    console.log(ranNums);
     for (let j = 0; j <= 8; j++) {
       const square = document.createElement("div");
       square.classList.add("squareStyle");
@@ -25,6 +31,25 @@ const gameBoard = () => {
       subBoard.insertAdjacentElement("afterbegin", square);
     }
     board.insertAdjacentElement("beforeend", subBoard);
+    ranNums.push(ranNums[0]);
+    ranNums.push(ranNums[1]);
+    ranNums.push(ranNums[2]);
+    ranNums.shift();
+    ranNums.shift();
+    ranNums.shift();
+    console.log(ranNums);
+    b++;
+    console.log(b);
   }
 };
 gameBoard();
+
+// 1,2,3,4,5,6,7,8,9   --> base row 1
+// 4,5,6,7,8,9,1,2,3   --> shift base row 1 by 3 to right
+// 7,8,9,1,2,3,4,5,6   --> shift base row 1 by 6 to right
+// 2,3,4,5,6,7,8,9,1   --> shit base row by 1 to right (base row 2)
+// 5,6,7,8,9,1,2,3,4   --> shift base row 2 by 3 to right
+// 8,9,1,2,3,4,5,6,7   --> shift base row 2 by 6 to right
+// 3,4,5,6,7,8,9,1,2   --> shift base row 1 by 2 to right (base row 3)
+// 6,7,8,9,1,2,3,4,5   --> shift base row 3 by 3 to right
+// 9,1,2,3,4,5,6,7,8   --> shift base row 3 by 6 to right

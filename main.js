@@ -15,6 +15,7 @@ const gameBoard = () => {
       b = 0;
       ranNums.push(ranNums[0]);
       ranNums.shift();
+      console.log("Update :", ranNums);
     }
     if (b === 0) {
       k = ranNums.length;
@@ -24,7 +25,7 @@ const gameBoard = () => {
         ranNums.splice(z, 1);
         k--;
       }
-      console.log("update :", ranNums);
+      console.log("Initial :", ranNums);
     }
     const subBoard = document.createElement("div");
     subBoard.classList.add("subBoard");

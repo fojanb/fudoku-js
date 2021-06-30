@@ -11,8 +11,12 @@ let b = 0;
 // -------------------------------
 const gameBoard = () => {
   for (let i = 0; i <= 8; i++) {
-    if (b === 0 || b >= 3) {
+    if (b >= 3) {
       b = 0;
+      ranNums.push(ranNums[0]);
+      ranNums.shift();
+    }
+    if (b === 0) {
       k = ranNums.length;
       while (k > 0) {
         z = Math.floor(Math.random() * k);
@@ -20,7 +24,7 @@ const gameBoard = () => {
         ranNums.splice(z, 1);
         k--;
       }
-      console.log("first", ranNums);
+      console.log("update :", ranNums);
     }
     const subBoard = document.createElement("div");
     subBoard.classList.add("subBoard");
@@ -39,7 +43,7 @@ const gameBoard = () => {
     ranNums.shift();
     console.log(ranNums);
     b++;
-    console.log(b);
+    console.log("b =", b);
   }
 };
 gameBoard();
@@ -47,7 +51,7 @@ gameBoard();
 // 1,2,3,4,5,6,7,8,9   --> base row 1
 // 4,5,6,7,8,9,1,2,3   --> shift base row 1 by 3 to right
 // 7,8,9,1,2,3,4,5,6   --> shift base row 1 by 6 to right
-// 2,3,4,5,6,7,8,9,1   --> shit base row by 1 to right (base row 2)
+// 2,3,4,5,6,7,8,9,1   --> shift base row by 1 to right (base row 2)
 // 5,6,7,8,9,1,2,3,4   --> shift base row 2 by 3 to right
 // 8,9,1,2,3,4,5,6,7   --> shift base row 2 by 6 to right
 // 3,4,5,6,7,8,9,1,2   --> shift base row 1 by 2 to right (base row 3)

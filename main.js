@@ -12,10 +12,10 @@ let b = 0;
 const gameBoard = () => {
   for (let i = 0; i <= 8; i++) {
     if (b >= 3) {
-      b = 0;
       ranNums.push(ranNums[0]);
       ranNums.shift();
       console.log("Update :", ranNums);
+      b=1;
     }
     if (b === 0) {
       k = ranNums.length;

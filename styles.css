@@ -39,14 +39,7 @@ h2 > span {
 .square:hover{
   opacity: 0.7;
 }
-.frame {
- width: 180px;
- height: 180px;
- border: 2.5px solid #f0a6ca;
- background-color: tomato;
- z-index: 1;
 
-}
 .footer {
   display: flex;
   justify-content: center;
@@ -56,4 +49,8 @@ h2 > span {
   color: #9c89b8;
   font-size: 14px;
  
+}
+.borderBottom {
+  border-bottom: 5px solid #f0a6ca;
+
 }

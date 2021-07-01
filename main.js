@@ -5,22 +5,17 @@ let ranNums = [8, 3, 1, 5, 6, 2, 9, 7, 4];
 let k;
 let z = 0;
 let b = 0;
-
-// ranNums.length = 0; //ranNums = [];
-// Permutation of 1 to 9
-
 // -------------------------------
 const gameBoard = () => {
   k = ranNums.length;
-      while (k > 0) {
-        z = Math.floor(Math.random() * k);
-        ranNums.push(ranNums[z]);
-        ranNums.splice(z, 1);
-        k--;
-      }
-      console.log("Initial :", ranNums);
+  while (k > 0) {
+    z = Math.floor(Math.random() * k);
+    ranNums.push(ranNums[z]);
+    ranNums.splice(z, 1);
+    k--;
+  }
+  console.log("Initial :", ranNums);
   for (let i = 0; i <= 8; i++) {
-   
     if (b >= 3) {
       ranNums.push(ranNums[0]);
       ranNums.shift();

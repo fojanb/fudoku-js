@@ -1,5 +1,16 @@
 body{
-  background-color: cadetblue;
+  background-color: #b8bedd;
+  color: #8c71b4;
+  font-size: 1.5em;
+  font-family: 'Source Code Pro', monospace;
+}
+h2 {
+  color: #9c89b8;
+  text-align: center;
+  letter-spacing: 15px;
+}
+h2 > span {
+  color: #ffef9f;
 }
 .board {
   display: grid;
@@ -7,7 +18,11 @@ body{
   grid-template-columns: repeat(9,60px); 
   text-align: center;
   width: 540px;
-  border: 5px solid rgb(100, 45, 252);
+  border: 5px solid #f0a6ca;
+  margin: 50px auto;
+  background-color: #f0e6ef;
+
+
 }
 
 .square {
@@ -18,7 +33,7 @@ body{
   text-align: center;
   width: 60px;
   height: 60px;
-  border-bottom: 1px solid rgb(100, 45, 252);
-  border-right: 1px solid rgb(100, 45, 252);
+  border-bottom: 2px solid #f0a6ca;
+  border-right: 2px solid #f0a6ca;
  
 }

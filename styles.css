@@ -21,6 +21,8 @@ h2 > span {
   border: 5px solid #f0a6ca;
   margin: 50px auto;
   background-color: #f8e7df;
+  box-shadow:10px 10px 10px rgb(148, 148, 148);
+  border-radius: 10px;
 }
 
 .square {
@@ -44,4 +46,19 @@ h2 > span {
  background-color: tomato;
  z-index: 1;
 
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: #9c89b8;
+  font-size: 14px;
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  overflow: hidden;
 }

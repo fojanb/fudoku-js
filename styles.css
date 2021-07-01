@@ -10,7 +10,7 @@ body{
   border: 5px solid rgb(100, 45, 252);
 }
 
-.squareStyle {
+.square {
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -24,11 +24,20 @@ const gameBoard = () => {
       b = 0;
     }
     for (let j = 0; j <= 8; j++) {
-      const square = document.createElement("div");
-      square.classList.add("square");
-      square.setAttribute("id", j + counter);
-      square.innerText = ranNums[j];
-      board.insertAdjacentElement("beforeend", square);
+      if (i === 2 || i === 5 || i === 8) {
+        const square = document.createElement("div");
+        square.classList.add("square");
+        square.classList.add("borderBottom");
+        square.setAttribute("id", j + counter);
+        square.innerText = ranNums[j];
+        board.insertAdjacentElement("beforeend", square);
+      } else {
+        const square = document.createElement("div");
+        square.classList.add("square");
+        square.setAttribute("id", j + counter);
+        square.innerText = ranNums[j];
+        board.insertAdjacentElement("beforeend", square);
+      }
     }
     ranNums.push(ranNums[0]);
     ranNums.push(ranNums[1]);
@@ -41,7 +50,6 @@ const gameBoard = () => {
     console.log("b =", b);
     counter += 9;
   }
-  
 };
 gameBoard();
 

@@ -34,6 +34,9 @@ h2 > span {
   border-bottom: 2px solid #f0a6ca;
   border-right: 2px solid #f0a6ca;
 }
+.square:hover{
+  opacity: 0.7;
+}
 .frame {
  width: 180px;
  height: 180px;

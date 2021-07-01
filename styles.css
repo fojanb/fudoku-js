@@ -39,7 +39,9 @@ h2 > span {
 
 }
 .square:hover{
-  opacity: 0.7;
+  background-color:  #4cdfbf;
+  color: #ffef9f;
+
 }
 
 .footer {

@@ -5,20 +5,13 @@ let ranNums = [8, 3, 1, 5, 6, 2, 9, 7, 4];
 let k;
 let z = 0;
 let b = 0;
+
 // ranNums.length = 0; //ranNums = [];
 // Permutation of 1 to 9
 
 // -------------------------------
 const gameBoard = () => {
-  for (let i = 0; i <= 8; i++) {
-    if (b >= 3) {
-      ranNums.push(ranNums[0]);
-      ranNums.shift();
-      console.log("Update :", ranNums);
-      b=1;
-    }
-    if (b === 0) {
-      k = ranNums.length;
+  k = ranNums.length;
       while (k > 0) {
         z = Math.floor(Math.random() * k);
         ranNums.push(ranNums[z]);
@@ -26,16 +19,21 @@ const gameBoard = () => {
         k--;
       }
       console.log("Initial :", ranNums);
+  for (let i = 0; i <= 8; i++) {
+   
+    if (b >= 3) {
+      ranNums.push(ranNums[0]);
+      ranNums.shift();
+      console.log("Update :", ranNums);
+      b = 0;
     }
-    const subBoard = document.createElement("div");
-    subBoard.classList.add("subBoard");
+
     for (let j = 0; j <= 8; j++) {
       const square = document.createElement("div");
       square.classList.add("squareStyle");
       square.innerText = ranNums[j];
-      subBoard.insertAdjacentElement("afterbegin", square);
+      board.insertAdjacentElement("beforeend", square);
     }
-    board.insertAdjacentElement("beforeend", subBoard);
     ranNums.push(ranNums[0]);
     ranNums.push(ranNums[1]);
     ranNums.push(ranNums[2]);

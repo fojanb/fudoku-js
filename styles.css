@@ -22,7 +22,7 @@ h2 > span {
   margin: 50px auto;
   background-color: #f8e7df;
   box-shadow:10px 10px 10px rgb(148, 148, 148);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .square {
@@ -35,6 +35,8 @@ h2 > span {
   height: 60px;
   border-bottom: 2px solid #f0a6ca;
   border-right: 2px solid #f0a6ca;
+  border-radius: 2px;
+
 }
 .square:hover{
   opacity: 0.7;

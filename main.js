@@ -5,6 +5,7 @@ let ranNums = [8, 3, 1, 5, 6, 2, 9, 7, 4];
 let k;
 let z = 0;
 let b = 0;
+let counter = 0;
 // -------------------------------
 const gameBoard = () => {
   k = ranNums.length;
@@ -22,10 +23,10 @@ const gameBoard = () => {
       console.log("Update :", ranNums);
       b = 0;
     }
-
     for (let j = 0; j <= 8; j++) {
       const square = document.createElement("div");
       square.classList.add("squareStyle");
+      square.setAttribute("id", j + counter);
       square.innerText = ranNums[j];
       board.insertAdjacentElement("beforeend", square);
     }
@@ -38,6 +39,7 @@ const gameBoard = () => {
     console.log(ranNums);
     b++;
     console.log("b =", b);
+    counter += 9;
   }
 };
 gameBoard();

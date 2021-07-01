@@ -55,10 +55,5 @@ h2 > span {
   width: 100%;
   color: #9c89b8;
   font-size: 14px;
-  font-weight: bolder;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100px;
-  overflow: hidden;
+ 
 }

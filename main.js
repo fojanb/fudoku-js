@@ -41,6 +41,7 @@ const gameBoard = () => {
     console.log("b =", b);
     counter += 9;
   }
+  
 };
 gameBoard();
 

@@ -25,7 +25,7 @@ const gameBoard = () => {
     }
     for (let j = 0; j <= 8; j++) {
       const square = document.createElement("div");
-      square.classList.add("squareStyle");
+      square.classList.add("square");
       square.setAttribute("id", j + counter);
       square.innerText = ranNums[j];
       board.insertAdjacentElement("beforeend", square);

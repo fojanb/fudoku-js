@@ -32,11 +32,20 @@ const gameBoard = () => {
         square.innerText = ranNums[j];
         board.insertAdjacentElement("beforeend", square);
       } else {
-        const square = document.createElement("div");
-        square.classList.add("square");
-        square.setAttribute("id", j + counter);
-        square.innerText = ranNums[j];
-        board.insertAdjacentElement("beforeend", square);
+        if (j === 2 || j === 5) {
+          const square = document.createElement("div");
+          square.classList.add("square");
+          square.classList.add("borderRight");
+          square.setAttribute("id", j + counter);
+          square.innerText = ranNums[j];
+          board.insertAdjacentElement("beforeend", square);
+        } else {
+          const square = document.createElement("div");
+          square.classList.add("square");
+          square.setAttribute("id", j + counter);
+          square.innerText = ranNums[j];
+          board.insertAdjacentElement("beforeend", square);
+        }
       }
     }
     ranNums.push(ranNums[0]);

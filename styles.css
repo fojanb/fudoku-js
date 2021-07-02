@@ -37,10 +37,10 @@ h2 > span {
   border-right: 2px solid #f0a6ca;
   border-radius: 2px;
 }
-.square:hover {
+/* .square:hover {
   background-color: #4cdfbf;
   color: #ffef9f;
-}
+} */
 
 .footer {
   display: flex;
@@ -60,11 +60,19 @@ h2 > span {
 .field {
   width: 40px;
   height: 40px;
-  background-color: #f8e7df;
+  background-color: #f3dbd0;
   text-align: center;
+  appearance: none;
   border: none;
-  margin: auto 0;
+  outline: none;  margin: auto 0;
   color: #8c71b4;
   font-size: 1em;
   font-family: "Source Code Pro", monospace;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.field:hover{
+  background-color: #f7ede9;
+  width: 45px;
+  height: 45px;
 }

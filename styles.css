@@ -64,14 +64,14 @@ h2 > span {
   text-align: center;
   appearance: none;
   border: none;
-  outline: none;  margin: auto 0;
+  outline: none;
+  margin: 0 auto;
   color: #8c71b4;
   font-size: 1em;
   font-family: "Source Code Pro", monospace;
   border-radius: 50%;
   cursor: pointer;
 }
-.field:hover{
+.field:hover {
   background-color: #c9efc3;
-
 }

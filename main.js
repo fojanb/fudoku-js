@@ -2,6 +2,8 @@
 const board = document.querySelector(".board");
 // -------------------------------
 let ranNums = [8, 3, 1, 5, 6, 2, 9, 7, 4];
+let index = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+
 let k;
 let z = 0;
 let b = 0;
@@ -66,6 +68,15 @@ const gameBoard = () => {
     b++;
     console.log("b =", b);
     counter += 9;
+  }
+  // Minimum 17 numbers must be on board
+  // 81 - 17 = 64 , we can remove 64 numbers (maximum)
+  for (let j = 0; j <= 8; j++) {
+    //Produce random number from 0 to 8 (index)
+    z = Math.floor(Math.random() * 9);
+    console.log(z)
+   
+
   }
 };
 gameBoard();

@@ -1,7 +1,7 @@
 // 9 by 9 sudoku
 const board = document.querySelector(".board");
 // -------------------------------
-let ranNums = [8, 3, 1, 5, 6, 2, 9, 7, 4];
+let ranNums = [1, "", 3, "", 5, "", 7, "", 9];
 let index = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 let k;
 let z = 0;
@@ -66,11 +66,11 @@ const gameBoard = () => {
         square.innerText = ranNums[j];
         if (ranNums[j] === "") {
           const field = document.createElement("input");
-            field.classList.add("field");
-            field.setAttribute("type", "text");
-            field.setAttribute("size", "1");
-            field.setAttribute("maxlength", "1");
-            square.insertAdjacentElement("afterBegin", field);
+          field.classList.add("field");
+          field.setAttribute("type", "text");
+          field.setAttribute("size", "1");
+          field.setAttribute("maxlength", "1");
+          square.insertAdjacentElement("afterBegin", field);
         }
         board.insertAdjacentElement("beforeEnd", square);
       } else {
@@ -80,11 +80,11 @@ const gameBoard = () => {
         square.innerText = ranNums[j];
         if (ranNums[j] === "") {
           const field = document.createElement("input");
-            field.classList.add("field");
-            field.setAttribute("type", "text");
-            field.setAttribute("size", "1");
-            field.setAttribute("maxlength", "1");
-            square.insertAdjacentElement("afterBegin", field);
+          field.classList.add("field");
+          field.setAttribute("type", "text");
+          field.setAttribute("size", "1");
+          field.setAttribute("maxlength", "1");
+          square.insertAdjacentElement("afterBegin", field);
         }
         board.insertAdjacentElement("beforEend", square);
       }
@@ -109,11 +109,10 @@ const gameBoard = () => {
     if (z != 5) {
       if (z % 3 === 0) {
         ranNums[z % 3] = "";
-        // Hard level
-        // } else if (z != 5) {
-        //   ranNums[z % 4] = "";
-        // }
-      }
+      } 
+      // else if (z != 5) {
+      //   ranNums[z % 4] = "";
+      // }
     }
     // ------------#
     ranNums.push(ranNums[0]);

@@ -38,6 +38,7 @@ const gameBoard = () => {
             field.classList.add("field");
             field.setAttribute("type", "text");
             field.setAttribute("size", "1");
+            field.setAttribute("maxlength", "1");
             square.insertAdjacentElement("afterBegin", field);
           }
           board.insertAdjacentElement("beforeEnd", square);
@@ -52,6 +53,7 @@ const gameBoard = () => {
             field.classList.add("field");
             field.setAttribute("type", "text");
             field.setAttribute("size", "1");
+            field.setAttribute("maxlength", "1");
             square.insertAdjacentElement("afterBegin", field);
           }
           board.insertAdjacentElement("beforeEnd", square);
@@ -67,6 +69,7 @@ const gameBoard = () => {
             field.classList.add("field");
             field.setAttribute("type", "text");
             field.setAttribute("size", "1");
+            field.setAttribute("maxlength", "1");
             square.insertAdjacentElement("afterBegin", field);
         }
         board.insertAdjacentElement("beforeEnd", square);
@@ -80,6 +83,7 @@ const gameBoard = () => {
             field.classList.add("field");
             field.setAttribute("type", "text");
             field.setAttribute("size", "1");
+            field.setAttribute("maxlength", "1");
             square.insertAdjacentElement("afterBegin", field);
         }
         board.insertAdjacentElement("beforEend", square);

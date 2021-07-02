@@ -57,8 +57,31 @@ const gameBoard = () => {
         board.insertAdjacentElement("beforeend", square);
       }
     }
+    // ------------#
     z = Math.floor(Math.random() * 9);
     ranNums[z] = "";
+    if (z != 9) {
+      if (z % 2 === 0) {
+        ranNums[z++] = "";
+      } else if (z % 3 === 0) {
+        ranNums[z++] = "";
+      }
+    }
+    if (z != 1) {
+      if (z % 2 === 0) {
+        ranNums[z--] = "";
+      } else if (z % 3 === 0) {
+        ranNums[z--] = "";
+      }
+    }
+    if (z != 5) {
+      if (z % 3 === 0) {
+        ranNums[z % 3] = "";
+      } else if (z % 4 === 0) {
+        ranNums[z % 5] = "";
+      }
+    }
+    // ------------#
     ranNums.push(ranNums[0]);
     ranNums.push(ranNums[1]);
     ranNums.push(ranNums[2]);
@@ -72,7 +95,6 @@ const gameBoard = () => {
   }
   // Minimum 17 numbers must be on board
   // 81 - 17 = 64 , we can remove 64 numbers (maximum)
-
 };
 gameBoard();
 

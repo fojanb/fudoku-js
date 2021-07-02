@@ -58,6 +58,8 @@ const gameBoard = () => {
         board.insertAdjacentElement("beforeend", square);
       }
     }
+    z = Math.floor(Math.random() * 9);
+    ranNums[z] = "";
     ranNums.push(ranNums[0]);
     ranNums.push(ranNums[1]);
     ranNums.push(ranNums[2]);
@@ -71,13 +73,7 @@ const gameBoard = () => {
   }
   // Minimum 17 numbers must be on board
   // 81 - 17 = 64 , we can remove 64 numbers (maximum)
-  for (let j = 0; j <= 8; j++) {
-    //Produce random number from 0 to 8 (index)
-    z = Math.floor(Math.random() * 9);
-    console.log(z)
-   
 
-  }
 };
 gameBoard();
 

@@ -25,12 +25,22 @@ const gameBoard = () => {
     }
     for (let j = 0; j <= 8; j++) {
       if (i === 2 || i === 5 || i === 8) {
-        const square = document.createElement("div");
-        square.classList.add("square");
-        square.classList.add("borderBottom");
-        square.setAttribute("id", j + counter);
-        square.innerText = ranNums[j];
-        board.insertAdjacentElement("beforeend", square);
+        if (j === 2 || j===5) {
+          const square = document.createElement("div");
+          square.classList.add("square");
+          square.classList.add("borderBottom");
+          square.classList.add("borderRight");
+          square.setAttribute("id", j + counter);
+          square.innerText = ranNums[j];
+          board.insertAdjacentElement("beforeend", square);
+        } else {
+          const square = document.createElement("div");
+          square.classList.add("square");
+          square.classList.add("borderBottom");
+          square.setAttribute("id", j + counter);
+          square.innerText = ranNums[j];
+          board.insertAdjacentElement("beforeend", square);
+        }
       } else if (j === 2 || j === 5) {
         const square = document.createElement("div");
         square.classList.add("square");

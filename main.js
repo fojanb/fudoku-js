@@ -109,7 +109,7 @@ const gameBoard = () => {
     if (z != 5) {
       if (z % 3 === 0) {
         ranNums[z % 3] = "";
-      } 
+      }
       // else if (z != 5) {
       //   ranNums[z % 4] = "";
       // }

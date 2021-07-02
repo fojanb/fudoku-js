@@ -72,7 +72,6 @@ h2 > span {
   cursor: pointer;
 }
 .field:hover{
-  background-color: #f7ede9;
-  width: 45px;
-  height: 45px;
+  background-color: #EFC3E6;
+
 }

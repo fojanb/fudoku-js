@@ -33,14 +33,24 @@ const gameBoard = () => {
           square.classList.add("borderRight");
           square.setAttribute("id", j + counter);
           square.innerText = ranNums[j];
-          board.insertAdjacentElement("beforeend", square);
+          if (ranNums[j] === "") {
+            const field = document.createElement("input");
+            field.setAttribute("type", "text");
+            square.insertAdjacentElement("afterBegin", field);
+          }
+          board.insertAdjacentElement("beforeEnd", square);
         } else {
           const square = document.createElement("div");
           square.classList.add("square");
           square.classList.add("borderBottom");
           square.setAttribute("id", j + counter);
           square.innerText = ranNums[j];
-          board.insertAdjacentElement("beforeend", square);
+          if (ranNums[j] === "") {
+            const field = document.createElement("input");
+            field.setAttribute("type", "text");
+            square.insertAdjacentElement("afterBegin", field);
+          }
+          board.insertAdjacentElement("beforeEnd", square);
         }
       } else if (j === 2 || j === 5) {
         const square = document.createElement("div");
@@ -48,13 +58,23 @@ const gameBoard = () => {
         square.classList.add("borderRight");
         square.setAttribute("id", j + counter);
         square.innerText = ranNums[j];
-        board.insertAdjacentElement("beforeend", square);
+        if (ranNums[j] === "") {
+          const field = document.createElement("input");
+          field.setAttribute("type", "text");
+          square.insertAdjacentElement("afterBegin", field);
+        }
+        board.insertAdjacentElement("beforeEnd", square);
       } else {
         const square = document.createElement("div");
         square.classList.add("square");
         square.setAttribute("id", j + counter);
         square.innerText = ranNums[j];
-        board.insertAdjacentElement("beforeend", square);
+        if (ranNums[j] === "") {
+          const field = document.createElement("input");
+          field.setAttribute("type", "text");
+          square.insertAdjacentElement("afterBegin", field);
+        }
+        board.insertAdjacentElement("beforEend", square);
       }
     }
     // ------------#

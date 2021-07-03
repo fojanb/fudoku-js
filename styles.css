@@ -11,11 +11,7 @@ h2 {
   letter-spacing: 15px;
 }
 h2 > span {
-<<<<<<< Updated upstream
-  color: #fddb8b;
-=======
   color: #ffd092;
->>>>>>> Stashed changes
 }
 .board {
   display: grid;
@@ -36,8 +32,6 @@ h2 > span {
   box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.3);
   border-top: 2px solid #9dacff;
   border-left: 2px solid #9dacff;
-
-
 }
 
 .square {
@@ -69,15 +63,9 @@ h2 > span {
   border-right: 5px solid #9dacff;
 }
 .field {
-<<<<<<< Updated upstream
   width: 30px;
   height: 30px;
-  background:none;
-=======
-  width: 40px;
-  height: 40px;
   background: none;
->>>>>>> Stashed changes
   text-align: center;
   appearance: none;
   outline: none;
@@ -93,11 +81,6 @@ h2 > span {
   box-shadow: 6px 6px 20px rgba(158, 158, 158, 0.3);
 }
 .field:hover {
-<<<<<<< Updated upstream
-  background-color: #e9e3d5;
-  border: 3px solid #9dacff;
-=======
   background-color: #ffd092;
   border: 2px solid #9dacff;
->>>>>>> Stashed changes
 }

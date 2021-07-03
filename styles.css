@@ -1,12 +1,12 @@
 body {
   /* background-color: #b8bedd; */
-  background-image: linear-gradient(to right, #B8BEDD 50%, #F0E6EF 100%);  
-  color: #8c71b4;
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  color: #757bc8;
   font-size: 1.5em;
   font-family: "Source Code Pro", monospace;
 }
 h2 {
-  color: #9c89b8;
+  color: #757bc8;
   text-align: center;
   letter-spacing: 15px;
 }
@@ -19,11 +19,18 @@ h2 > span {
   grid-template-columns: repeat(9, 60px);
   text-align: center;
   width: 540px;
-  border: 5px solid #f0a6ca;
+  border: 5px solid #9dacff;
   margin: 50px auto;
-  background-color: #f8e7df;
   box-shadow: 10px 10px 10px rgb(192, 158, 185);
   border-radius: 5px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  z-index: 2;
+  backdrop-filter: blur(0.8rem);
+  box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.3);
 }
 
 .square {
@@ -34,14 +41,10 @@ h2 > span {
   text-align: center;
   width: 60px;
   height: 60px;
-  border-bottom: 2px solid #f0a6ca;
-  border-right: 2px solid #f0a6ca;
+  border-bottom: 2px solid #9dacff;
+  border-right: 2px solid #9dacff;
   border-radius: 2px;
 }
-/* .square:hover {
-  background-color: #4cdfbf;
-  color: #ffef9f;
-} */
 
 .footer {
   display: flex;
@@ -53,18 +56,17 @@ h2 > span {
   font-size: 14px;
 }
 .borderBottom {
-  border-bottom: 5px solid #f0a6ca;
+  border-bottom: 5px solid #9dacff;
 }
 .borderRight {
-  border-right: 5px solid #f0a6ca;
+  border-right: 5px solid #9dacff;
 }
 .field {
   width: 40px;
   height: 40px;
-  background-color: #f3dbd0;
+  background:none;
   text-align: center;
   appearance: none;
-  border: none;
   outline: none;
   margin: 0 auto;
   color: #8c71b4;
@@ -72,8 +74,14 @@ h2 > span {
   font-family: "Source Code Pro", monospace;
   border-radius: 50%;
   cursor: pointer;
+  border: 1px solid #b4f3a6;
+
+  z-index: 3;
+  backdrop-filter: blur(0.8rem);
+  box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.3);
+
 }
 .field:hover {
-  background-color: #c9efc3;
-  border:2px dashed #06d6a0;
+  background-color: #caffbf;
+  border: 2px dashed #06d6a0;
 }

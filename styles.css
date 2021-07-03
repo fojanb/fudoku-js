@@ -5,8 +5,7 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 h2 {
-  /* color: #757bc8; */
-  color: aqua;
+  color: #757bc8;
   text-align: center;
   letter-spacing: 15px;
 }

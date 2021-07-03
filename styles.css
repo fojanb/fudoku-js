@@ -11,7 +11,7 @@ h2 {
   letter-spacing: 15px;
 }
 h2 > span {
-  color: #c9efc3;
+  color: #fddb8b;
 }
 .board {
   display: grid;
@@ -62,8 +62,8 @@ h2 > span {
   border-right: 5px solid #9dacff;
 }
 .field {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background:none;
   text-align: center;
   appearance: none;
@@ -73,7 +73,7 @@ h2 > span {
   color: #8c71b4;
   font-size: 1em;
   font-family: "Source Code Pro", monospace;
-  border-radius: 20%;
+  border-radius: 10%;
   cursor: pointer;
   z-index: 2;
   backdrop-filter: blur(0.8rem);
@@ -81,6 +81,6 @@ h2 > span {
 
 }
 .field:hover {
-  background-color: #caffbf;
-  border: 2px dashed #06d6a0;
+  background-color: #fddb8b;
+  border: 3px solid #9dacff;
 }

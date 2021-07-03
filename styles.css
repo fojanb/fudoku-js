@@ -52,7 +52,7 @@ h2 > span {
   align-items: center;
   text-align: center;
   width: 100%;
-  color: #9c89b8;
+  color: #757bc8;
   font-size: 14px;
 }
 .borderBottom {
@@ -68,17 +68,16 @@ h2 > span {
   text-align: center;
   appearance: none;
   outline: none;
+  border:none;
   margin: 0 auto;
   color: #8c71b4;
   font-size: 1em;
   font-family: "Source Code Pro", monospace;
-  border-radius: 50%;
+  border-radius: 20%;
   cursor: pointer;
-  border: 1px solid #b4f3a6;
-
-  z-index: 3;
+  z-index: 2;
   backdrop-filter: blur(0.8rem);
-  box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.3);
+  box-shadow: 6px 6px 20px rgba(158, 158, 158, 0.3);
 
 }
 .field:hover {

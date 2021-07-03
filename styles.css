@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  background-image: linear-gradient(to top, #92fe9d 0%, #00c9ff 100%);
   color: #757bc8;
   font-size: 1.5em;
   font-family: "Source Code Pro", monospace;
@@ -28,7 +28,7 @@ h2 > span {
   );
   z-index: 2;
   backdrop-filter: blur(0.8rem);
-  box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.3);
+  box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.5);
   border-top: 2px solid #9dacff;
   border-left: 2px solid #9dacff;
 }

@@ -1,5 +1,6 @@
 body {
-  background-color: #b8bedd;
+  /* background-color: #b8bedd; */
+  background-image: linear-gradient(to right, #B8BEDD 50%, #F0E6EF 100%);  
   color: #8c71b4;
   font-size: 1.5em;
   font-family: "Source Code Pro", monospace;
@@ -10,7 +11,7 @@ h2 {
   letter-spacing: 15px;
 }
 h2 > span {
-  color: #ffef9f;
+  color: #c9efc3;
 }
 .board {
   display: grid;
@@ -74,4 +75,5 @@ h2 > span {
 }
 .field:hover {
   background-color: #c9efc3;
+  border:2px dashed #06d6a0;
 }

@@ -45,7 +45,6 @@ h2 > span {
   border-right: 2px solid #9dacff;
   border-radius: 2px;
 }
-
 .footer {
   display: flex;
   justify-content: center;
@@ -81,7 +80,6 @@ h2 > span {
 }
 .field:hover {
   background-color: #ffd092;
-  border: 2px solid #9dacff;
 }
 .field:focus {
   background-color: #faddb8;

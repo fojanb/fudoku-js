@@ -25,7 +25,7 @@ const gameBoard = () => {
       b = 0;
     }
     for (let j = 0; j <= 8; j++) {
-      if (i === 2 || i === 5 || i === 8) {
+      if (i === 2 || i === 5) {
         if (j === 2 || j === 5) {
           const square = document.createElement("div");
           square.classList.add("square");

@@ -1,7 +1,7 @@
 // 9 by 9 sudoku
 const board = document.querySelector(".board");
 // -------------------------------
-let ranNums = [1, "", 3, "", 5, "", 7, "", 9];
+let ranNums = [1, "", 3, "", 5, "", 7, 8, 9];
 let index = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 let k;
 let z = 0;

@@ -69,7 +69,7 @@ h2 > span {
   outline: none;
   border: none;
   margin: 0 auto;
-  color: #8c71b4;
+  color: #e324ca;
   font-size: 1em;
   font-family: "Source Code Pro", monospace;
   border-radius: 10%;
@@ -79,8 +79,8 @@ h2 > span {
   box-shadow: 6px 6px 20px rgba(158, 158, 158, 0.3);
 }
 .field:hover {
-  background-color: #dcd6f7;
+  background-color: #ffd092;
 }
 .field:focus {
-  background-color: #fde75e;
+  background-color: #fff6b9;
 }

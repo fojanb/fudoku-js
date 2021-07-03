@@ -1,17 +1,21 @@
 body {
-  /* background-color: #b8bedd; */
   background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
   color: #757bc8;
   font-size: 1.5em;
   font-family: "Source Code Pro", monospace;
 }
 h2 {
-  color: #757bc8;
+  /* color: #757bc8; */
+  color: aqua;
   text-align: center;
   letter-spacing: 15px;
 }
 h2 > span {
+<<<<<<< Updated upstream
   color: #fddb8b;
+=======
+  color: #ffd092;
+>>>>>>> Stashed changes
 }
 .board {
   display: grid;
@@ -19,18 +23,21 @@ h2 > span {
   grid-template-columns: repeat(9, 60px);
   text-align: center;
   width: 540px;
-  border: 5px solid #9dacff;
   margin: 50px auto;
   box-shadow: 10px 10px 10px rgb(192, 158, 185);
   border-radius: 5px;
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1)
   );
   z-index: 2;
   backdrop-filter: blur(0.8rem);
   box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.3);
+  border-top: 2px solid #9dacff;
+  border-left: 2px solid #9dacff;
+
+
 }
 
 .square {
@@ -62,13 +69,19 @@ h2 > span {
   border-right: 5px solid #9dacff;
 }
 .field {
+<<<<<<< Updated upstream
   width: 30px;
   height: 30px;
   background:none;
+=======
+  width: 40px;
+  height: 40px;
+  background: none;
+>>>>>>> Stashed changes
   text-align: center;
   appearance: none;
   outline: none;
-  border:none;
+  border: none;
   margin: 0 auto;
   color: #8c71b4;
   font-size: 1em;
@@ -78,9 +91,13 @@ h2 > span {
   z-index: 2;
   backdrop-filter: blur(0.8rem);
   box-shadow: 6px 6px 20px rgba(158, 158, 158, 0.3);
-
 }
 .field:hover {
+<<<<<<< Updated upstream
   background-color: #e9e3d5;
   border: 3px solid #9dacff;
+=======
+  background-color: #ffd092;
+  border: 2px solid #9dacff;
+>>>>>>> Stashed changes
 }

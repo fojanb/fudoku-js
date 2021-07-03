@@ -79,8 +79,8 @@ h2 > span {
   box-shadow: 6px 6px 20px rgba(158, 158, 158, 0.3);
 }
 .field:hover {
-  background-color: #ffd092;
+  background-color: #dcd6f7;
 }
 .field:focus {
-  background-color: #faddb8;
+  background-color: #fde75e;
 }

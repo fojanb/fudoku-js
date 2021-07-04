@@ -1,11 +1,11 @@
 body {
-  background-image: linear-gradient(to top, #92fe9d 0%, #00c9ff 100%);
-  color: #757bc8;
+  background-image: linear-gradient(to top, #92fe9d 0%, #006885 100%);
+  color: #7209b7;
   font-size: 1.5em;
   font-family: "Source Code Pro", monospace;
 }
 h2 {
-  color: #757bc8;
+  color: #ffd670;
   text-align: center;
   letter-spacing: 15px;
 }
@@ -51,7 +51,7 @@ h2 > span {
   align-items: center;
   text-align: center;
   width: 100%;
-  color: #757bc8;
+  color: #7209b7;
   font-size: 14px;
 }
 .borderBottom {
@@ -69,7 +69,7 @@ h2 > span {
   outline: none;
   border: none;
   margin: 0 auto;
-  color: #757bc8;
+  color: #7209b7;
   font-size: 1em;
   font-family: "Source Code Pro", monospace;
   border-radius: 10%;

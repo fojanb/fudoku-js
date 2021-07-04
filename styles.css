@@ -10,7 +10,7 @@ h2 {
   letter-spacing: 15px;
 }
 h2 > span {
-  color: #ffd092;
+  color: #eed2e7;
 }
 .board {
   display: grid;
@@ -31,10 +31,8 @@ h2 > span {
   box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.5);
   border-top: 2px solid #9dacff;
   border-left: 2px solid #9dacff;  font-size: 40px;
-  font-size: 40px;
-
+  font-size: 35px;
 }
-
 .square {
   display: flex;
   flex-direction: row;

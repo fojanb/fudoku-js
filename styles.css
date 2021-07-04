@@ -30,7 +30,9 @@ h2 > span {
   backdrop-filter: blur(0.8rem);
   box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.5);
   border-top: 2px solid #9dacff;
-  border-left: 2px solid #9dacff;
+  border-left: 2px solid #9dacff;  font-size: 40px;
+  font-size: 40px;
+
 }
 
 .square {
@@ -61,15 +63,15 @@ h2 > span {
   border-right: 5px solid #9dacff;
 }
 .field {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background: none;
   text-align: center;
   appearance: none;
   outline: none;
   border: none;
   margin: 0 auto;
-  color: #e324ca;
+  color: #757bc8;
   font-size: 1em;
   font-family: "Source Code Pro", monospace;
   border-radius: 10%;
@@ -79,8 +81,8 @@ h2 > span {
   box-shadow: 6px 6px 20px rgba(158, 158, 158, 0.3);
 }
 .field:hover {
-  background-color: #ffd092;
+  background-color: #eed2e7;
 }
 .field:focus {
-  background-color: #fff6b9;
+  background-color: #faf3c9;
 }

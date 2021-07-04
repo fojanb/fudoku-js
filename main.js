@@ -92,7 +92,7 @@ const gameBoard = () => {
     // ------------#
     z = Math.floor(Math.random() * 9);
     ranNums[z] = "";
-    if (z !=9) {
+    if (z != 9) {
       if (z % 2 === 0) {
         ranNums[z++] = "";
       } else if (z % 3 === 0) {
@@ -110,9 +110,6 @@ const gameBoard = () => {
       if (z % 3 === 0) {
         ranNums[z % 3] = "";
       }
-      // else if (z != 5) {
-      //   ranNums[z % 4] = "";
-      // }
     }
     // ------------#
     ranNums.push(ranNums[0]);

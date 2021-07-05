@@ -1,15 +1,17 @@
 html {
   position: relative;
   min-height: 100vh;
-  background-image: url('./bg.png');
+  background-image: url("./bg.png");
   background-size: cover;
   background-attachment: fixed;
+  transition: 1s ease-out;
 }
-/* main{
+main{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  min-height: 100vh;
   
-} */
+}
 body {
   color: #ddb892;
   font-size: 1.5em;
@@ -19,7 +21,7 @@ body {
     rgba(0, 0, 0, 0.1),
     rgba(0, 0, 0, 0.6)
   );
-  margin:0px;
+  margin: 0px;
   min-height: 100vh;
 }
 
@@ -47,8 +49,25 @@ h2 > span {
   z-index: 2;
   backdrop-filter: blur(0.8rem);
   box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.5);
-  border-top: 2px solid #582f0e;
-  border-left: 2px solid #582f0e;
+
+  font-size: 25px;
+}
+.note {
+  display: grid;
+  grid-template-rows: repeat(9, 50px);
+  grid-template-columns: repeat(9, 50px);
+  text-align: center;
+  width: 450px;
+  margin-left: 850px;
+  margin-top: 60px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1)
+  );
+  z-index: 2;
+  backdrop-filter: blur(0.8rem);
+  box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.5);
   font-size: 25px;
 }
 .square {
@@ -57,11 +76,10 @@ h2 > span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin:0 auto;
+  margin: 0 auto;
   width: 50px;
   height: 50px;
-  border-bottom: 2px solid #582f0e;
-  border-right: 2px solid #582f0e;
+
 }
 .footer {
   display: flex;
@@ -108,7 +126,6 @@ h2 > span {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .field:focus {
-  background-color: rgb(237, 224, 212,0.75);
+  background-color: rgb(237, 224, 212, 0.75);
   color: #815f3d;
-
 }

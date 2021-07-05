@@ -1,10 +1,15 @@
 html {
   position: relative;
   min-height: 100vh;
-  background-image: url('./bg.jpg');
+  background-image: url('./bg.png');
   background-size: cover;
   background-attachment: fixed;
 }
+/* main{
+  display: flex;
+  flex-direction: row;
+  
+} */
 body {
   color: #ddb892;
   font-size: 1.5em;
@@ -16,7 +21,6 @@ body {
   );
   margin:0px;
   min-height: 100vh;
-
 }
 
 h2 {
@@ -33,7 +37,8 @@ h2 > span {
   grid-template-columns: repeat(9, 50px);
   text-align: center;
   width: 450px;
-  margin: 50px auto;
+  margin-left: 850px;
+  margin-top: 60px;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.2),
@@ -64,8 +69,16 @@ h2 > span {
   align-items: center;
   text-align: center;
   width: 100%;
-  color: #ddb892;
+  font-family: "Source Code Pro", monospace;
   font-size: 14px;
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  color: #ddb892;
 }
 .borderBottom {
   border-bottom: 2px solid #ddb892;
@@ -83,11 +96,11 @@ h2 > span {
   outline: none;
   border: none;
   margin: 0 auto;
-  color: #774936;
   font-size: 25px;
   font-family: "Source Code Pro", monospace;
   cursor: pointer;
   z-index: 2;
+  color: #ddb892;
   backdrop-filter: blur(0.4rem);
   box-shadow: 1px 1px 5px rgba(158, 158, 158, 0.1);
 }
@@ -96,4 +109,6 @@ h2 > span {
 }
 .field:focus {
   background-color: rgb(237, 224, 212,0.75);
+  color: #815f3d;
+
 }

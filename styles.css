@@ -6,7 +6,7 @@ html {
   background-attachment: fixed;
   transition: 1s ease-out;
 }
-main{
+main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -60,11 +60,16 @@ h2 > span {
     rgba(255, 255, 255, 0.1)
   );
   z-index: 2;
-  backdrop-filter: blur(0.2rem);
+  backdrop-filter: blur(1rem);
   box-shadow: 6px 6px 20px rgba(85, 85, 85, 0.5);
-  font-size: 15px;
-  padding: 20px;
-  color: #cebba7;
+  font-size: 20px;
+  padding: 25px;
+  color: #e2cfbc;
+  -webkit-text-stroke: 1px #351e08;
+}
+.note > h3 {
+  text-align: center;
+  font-weight: bolder;
 }
 .square {
   display: flex;
